@@ -1,5 +1,6 @@
 package com.platzi.kotlinyjava;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -24,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         edtxPass = (EditText) findViewById(R.id.edtxLoginPassw);
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
-        PojoBasico pojoLista = new PojoBasico("Titulo 1", "Descripcion 1");
-        PojoBasico pojoLista2 = new PojoBasico("Titulo 1");
+//        PojoBasico pojoLista = new PojoBasico("Titulo 1", "Descripcion 1");
+//        PojoBasico pojoLista2 = new PojoBasico("Titulo 1");
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "onClick: " + isValid);
                 if (isValid) {
                     //iniciarVista
+                    startActivity(new Intent(MainActivity.this, ListadoActivity.class));
                 } else {
                     Toast.makeText(MainActivity.this, "Password Invalida", Toast.LENGTH_SHORT).show();
                 }
