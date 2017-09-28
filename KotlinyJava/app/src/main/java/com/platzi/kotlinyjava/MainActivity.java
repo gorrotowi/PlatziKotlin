@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         edtxPass = (EditText) findViewById(R.id.edtxLoginPassw);
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
+        PojoBasico pojoLista = new PojoBasico("Titulo 1", "Descripcion 1");
+        PojoBasico pojoLista2 = new PojoBasico("Titulo 1");
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
