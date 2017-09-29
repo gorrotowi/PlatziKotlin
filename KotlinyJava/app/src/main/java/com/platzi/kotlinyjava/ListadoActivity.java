@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,14 @@ public class ListadoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listado);
 
         RecyclerView rcListado = (RecyclerView) findViewById(R.id.rcListado);
+
+        TextView textView = (TextView) findViewById(R.id.txtListadoUser);
+
+        if (getIntent() != null) {
+            Bundle bundle = getIntent().getExtras();
+            String nombre = bundle.getString("usuario", "");
+            textView.setText("Bienvenido " + nombre);
+        }
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
