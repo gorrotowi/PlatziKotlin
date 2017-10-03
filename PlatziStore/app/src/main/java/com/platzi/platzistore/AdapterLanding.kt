@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item_landing.view.*
+import org.jetbrains.anko.startActivity
 
 /**
  * @author Gorro.
@@ -28,6 +29,7 @@ class AdapterLanding(val data: List<ItemLanding?>?) : RecyclerView.Adapter<Adapt
                     itemView.txtTitleItem.text = title
                     itemView.txtDescItem.text = desc
                     itemView.txtPriceItem.text = "$ ${String.format("%.2f", price)}"
+                    itemView.context.startActivity<DetailActivity>("title" to title, "desc" to desc, "price" to price)
                 }
             }
         }
