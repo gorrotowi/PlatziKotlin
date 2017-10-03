@@ -30,6 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:transitionName="transitionTitle"
                 tools:text="Titulo" />
 
             <TextView
@@ -37,6 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:transitionName="transitionDesc"
                 tools:text="Titulo" />
 
             <TextView
@@ -46,6 +48,7 @@
                 android:layout_gravity="end"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorAccent"
+                android:transitionName="transitionPrice"
                 tools:text="Titulo" />
 
         </LinearLayout>

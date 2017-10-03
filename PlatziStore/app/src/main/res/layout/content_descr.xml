@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
+            android:transitionName="transitionTitle"
             tools:text="Titulo" />
 
         <TextView
@@ -24,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:transitionName="transitionDesc"
             tools:text="Descrip" />
 
         <TextView
@@ -33,6 +35,7 @@
             android:layout_gravity="end"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
+            android:transitionName="transitionPrice"
             tools:text="$$$" />
 
         <TextView
