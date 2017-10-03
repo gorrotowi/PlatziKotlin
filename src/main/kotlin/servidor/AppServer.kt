@@ -49,6 +49,10 @@ fun Application.main() {
             call.respondText("Ok", ContentType.Text.Html, HttpStatusCode.OK)
         }
 
+        getImages()
+
+        listProducts()
+
     }
 
 }
