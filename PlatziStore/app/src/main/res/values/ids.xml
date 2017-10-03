@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imgItem" type="id">1</item>
+    <item name="txtTitleItem" type="id">2</item>
+    <item name="txtDescItem" type="id">3</item>
+    <item name="txtPriceItem" type="id">4</item>
+</resources>

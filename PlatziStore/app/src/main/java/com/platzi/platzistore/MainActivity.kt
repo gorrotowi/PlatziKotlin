@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         rcViewLanding.layoutManager = GridLayoutManager(this, 2)
 
         val data = (0..20).map {
-            ItemLanding("Title $it", "Descr $it", 200.00 + it)
+            ItemLanding("Title $it", "Descr $it", 200.00 + it, "")
         }
 
         rcViewLanding.adapter = AdapterLanding(data)
