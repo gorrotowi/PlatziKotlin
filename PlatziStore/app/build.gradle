@@ -32,6 +32,7 @@ dependencies {
     implementation 'org.jetbrains.anko:anko-sdk25:0.10.1'
     implementation 'org.jetbrains.anko:anko-appcompat-v7:0.10.1'
     implementation 'org.jetbrains.anko:anko-cardview-v7:0.10.1'
+    implementation 'org.jetbrains.anko:anko-sqlite:0.10.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
