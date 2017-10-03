@@ -7,8 +7,8 @@ import android.support.v4.util.Pair
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_landing.view.*
-import org.jetbrains.anko.startActivity
 
 /**
  * @author Gorro.
@@ -34,6 +34,7 @@ class AdapterLanding(val data: List<ItemLanding?>?) : RecyclerView.Adapter<Adapt
                     itemView.txtDescItem.text = desc
                     itemView.txtPriceItem.text = "$ ${String.format("%.2f", price)}"
 
+                    Glide.with(itemView.context).load(urlImage).into(itemView.imgItemHeader)
 
                     val intent = Intent(itemView.context, DetailActivity::class.java)
                     intent.putExtra("title", title)

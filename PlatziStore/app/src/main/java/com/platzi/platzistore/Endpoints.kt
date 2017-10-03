@@ -1,5 +1,6 @@
 package com.platzi.platzistore
 
+import com.platzi.platzistore.pojosretrofit.ResponseProducts
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.http.GET
@@ -9,5 +10,5 @@ import retrofit2.http.GET
  */
 interface Endpoints {
     @GET("list")
-    fun getList(): Call<JSONObject>
+    fun getList(): Call<ResponseProducts>
 }
